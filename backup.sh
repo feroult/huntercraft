@@ -1,8 +1,5 @@
 #!/bin/bash -x
 
-echo $MINECRAFT_BUCKET
-exit -1
-
 TIME=$(date "+%Y%m%d-%H%M%S")
 TEMP_DIR="/tmp/minecraft_backup"
 SCREEN_OUTPUT="$TEMP_DIR/minecraft-screen.txt"
