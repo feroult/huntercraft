@@ -13,7 +13,7 @@ backup() {
     cd ..
     FOLDER=$(basename $MINECRAFT_HOME)
     zip -r $BACKUP_FILE $FOLDER
-    gsutil -m cp -R $MINECRAFT_HOME gs://$MINECRAFT_BUCKET/minecraft-$TIME.zip
+    gsutil -m cp -R $MINECRAFT_HOME $MINECRAFT_BUCKET/minecraft-$TIME.zip
 }
 
 screen -r mcs -X stuff "save-all\nsave-off\nsay backup-$TIME\n"
