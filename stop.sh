@@ -1,4 +1,4 @@
 #!/bin/bash -x
 
-ps -ef | grep spigot.jar | awk '{ print $2 }' | xargs kill -9
+screen -r mcs -X stuff "stop\n"
 crontab -r
