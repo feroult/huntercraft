@@ -1,2 +1,2 @@
 * * * * * . $HOME/.profile; $HOME/huntercraft/respawn.sh
-28 17 * * * . $HOME/.profile; $HOME/huntercraft/backup.sh
+30 17 * * * . $HOME/.profile; $HOME/huntercraft/backup.sh
