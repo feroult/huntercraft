@@ -1,2 +1,2 @@
-* * * * * . $HOME/.profile; $HOME/huntercraft/respawn.sh
-30 17 * * * . $HOME/.profile; $HOME/huntercraft/backup.sh
+* * * * * . $HOME/.profile; $HOME/huntercraft/respawn.sh | /usr/bin/logger -t huntercraft
+35 17 * * * . $HOME/.profile; $HOME/huntercraft/backup.sh | /usr/bin/logger -t huntercraft
