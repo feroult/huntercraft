@@ -7,6 +7,4 @@ if [[ $? -ne 0 ]] ; then
     echo "Restarting spigot..."
     screen -wipe mcs || true
     $DIR/start.sh
-else
-    echo "Spigot already running."
 fi

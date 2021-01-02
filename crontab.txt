@@ -1,3 +1,4 @@
 CRON_TZ=America/Sao_Paulo
-* * * * * . $HOME/.profile; ($HOME/huntercraft/respawn.sh | logger -t huntercraft)
-38 17 * * * . $HOME/.profile; ($HOME/huntercraft/backup.sh | logger -t huntercraft)
+#* * * * * . $HOME/.profile; ($HOME/huntercraft/respawn.sh | logger -t huntercraft)
+#42 17 * * * . $HOME/.profile; ($HOME/huntercraft/backup.sh | logger -t huntercraft)
+45 17 * * * echo a > /tmp/c
