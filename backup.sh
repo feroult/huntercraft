@@ -17,7 +17,7 @@ backup() {
 screen -r mcs -X stuff "save-all\nsave-off\nsay backup-$TIME\n"
 
 screen -r mcs -X hardcopy $SCREEN_OUTPUT
-while [ -z "$(grep backup-$TIME /tmp/minecraft-screen.txt)" ]; do
+while [ -z "$(grep backup-$TIME $SCREEN_OUTPUT)" ]; do
     sleep 1
     screen -r mcs -X hardcopy $SCREEN_OUTPUT
 done
