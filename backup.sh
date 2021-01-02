@@ -1,12 +1,14 @@
 #!/bin/bash -x
 
-GSUTIL=/usr/bin/gsutil
+echo $MINECRAFT_BUCKET
+exit -1
 
 TIME=$(date "+%Y%m%d-%H%M%S")
 TEMP_DIR="/tmp/minecraft_backup"
 SCREEN_OUTPUT="$TEMP_DIR/minecraft-screen.txt"
 BACKUP_FILE="$TEMP_DIR/minecraft-backup.zip"
 
+rm -rf $TEMP_DIR
 mkdir -p $TEMP_DIR
 
 backup() {    
