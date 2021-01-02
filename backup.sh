@@ -9,8 +9,11 @@ BACKUP_FILE="$TEMP_DIR/minecraft-backup.zip"
 
 mkdir -p $TEMP_DIR
 
-backup() {
-    zip -r $BACKUP_FILE $MINECRAFT_HOME
+backup() {    
+    cd $MINECRAFT_HOME
+    cd ..
+    FOLDER=$(basename $MINECRAFT_HOME)
+    zip -r $BACKUP_FILE $FOLDER
     gsutil -m cp -R $MINECRAFT_HOME gs://$MINECRAFT_BUCKET/minecraft-$TIME.zip
 }
 
